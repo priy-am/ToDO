@@ -228,7 +228,7 @@ function App() {
                           ref={provided.innerRef}
                           {...provided.draggableProps}
                           {...provided.dragHandleProps}
-                          className="todo flex justify-between items-center   p-4 my-4 rounded shadow-md"
+                          className="todo flex flex-col md:flex-row justify-between items-center   p-4 my-4 rounded shadow-md"
                         >
                           <div className="flex items-center gap-4">
                             <input
