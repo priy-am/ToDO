@@ -1,22 +1,23 @@
-import React from 'react'
+import { Button } from "@mui/material";
+import React from "react";
 import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
     return (
-        <nav className='flex justify-around bg-blue-950 text-white py-1'>
-            <div className="logo ml-10">
-                <img className='h-14' src="/todo.png" alt="i-task" />
+        <nav className="flex justify-around items-center  bg-blue-950 text-white py-4">
+            <div className="logo ml-10 text-2xl font-bold">
+                <span>TaskManager</span>
             </div>
-            {/* <ul className='flex items-center gap-9 mr-10'>
-                <li className='cursor-pointer text-xl hover:underline hover:font-bold transition-all'>Home</li>
-                <li className='cursor-pointer text-xl hover:underline hover:font-bold transition-all'>Your task</li>
-            </ul> */}
-            <button className="flex items-center justify-between gap-2 bg-blue-700 rounded-full px-3  shadow-lg hover:shadow-blue-500 ring-1 ring-white">
+            <Button variant="text"
+                className=" border border-gray-600 bg-blue-700 rounded-full px-3  "
+            >
+                <a href="https://github.com/priy-am" className=" flex gap-2 items-center">
                 <FaGithub />
-                <span className="">GitHub</span>
-            </button>
+                    <span className="">GitHub</span>
+                </a>
+            </Button>
         </nav>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
